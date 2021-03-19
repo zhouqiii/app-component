@@ -4,7 +4,7 @@
     <swiper-slide v-for="(page,index) in pages" :key="index">
         <div class="icon" v-for="item of page" :key="item.id">
         <div class="icon-img">
-        <img class="icon-img-img" :src="item.imgUrl"/>
+        <img class="icon-img-img" :src="item.src"/>
         </div>
         <p class="icon-desc">{{item.desc}}</p>
         </div>

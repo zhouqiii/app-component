@@ -3,7 +3,7 @@
    <swiper :options="swiperOption" v-if="showSwipers">
     <!-- slides -->
     <swiper-slide v-for="item of swip" :key="item.id">
-        <img class="swiper-img" :src="item.imgUrl" /> 
+        <img class="swiper-img" :src="item.src" /> 
     </swiper-slide>
     <!-- Optional controls -->
     <div class="swiper-pagination"  slot="pagination"></div>
@@ -22,6 +22,9 @@ export default {
            swiperOption: {
              pagination: '.swiper-pagination' ,
              loop: true,
+             autoplay: 3000,
+             speed: 1000,
+             disableOnInteraction: true,//用户操作后,停止自动切换
            }
         }
     },
@@ -42,5 +45,5 @@ export default {
     overflow: hidden
     padding-bottom: 32%
     .swiper-img
-        width: 47%
+        width: 70%
 </style>
