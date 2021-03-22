@@ -7,6 +7,7 @@
         <card-card></card-card>
         <card-good></card-good>
         <card-new></card-new>
+        <almighty-points></almighty-points>
     </div>
 </template>
 <script>
@@ -23,6 +24,7 @@ import pic2 from '@/assets/image/22.png'
 import pic3 from '@/assets/image/33.png'
 import pic4 from '@/assets/image/icon1.png'
 import axios from 'axios'
+import AlmightyPoints from '../components/Home/AlmightyPoints.vue'
 
 
 export default {
@@ -34,7 +36,8 @@ export default {
     NavBar,
     CardCard,
     CardGood,
-    CardNew
+    CardNew,
+    AlmightyPoints
   },
  data(){
     return {

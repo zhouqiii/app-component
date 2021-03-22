@@ -13,7 +13,7 @@
                 </el-col>
             </el-row>
             <el-row class="cardRow">
-                <el-col :span="10" v-for="(o, index) in cardList2" :key="o" :offset="index > 0 ? 2 : 0" class="cardCol">
+                <el-col :span="10" v-for="(o, index) in cardList2" :key="index" :offset="index > 0 ? 2 : 0" class="cardCol">
                     <el-card :body-style="{ padding: '2% 4%' }">
                     <img :src="o.src" class="image">
                     <div>
