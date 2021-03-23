@@ -1,6 +1,12 @@
 <template>
     <div>
         <nav-bar></nav-bar>
+        <header-head>
+            <template v-slot:headtitle>{{headtitle}}</template>
+            <template v-slot:headicon>
+                 <i class="el-icon-star-off"></i>
+            </template>
+        </header-head>
         <div class="cardList" v-for="(item,index) of cardList" :key="index">
             <div class="cardDetail" v-on:click="greet">
                 <p>{{item.number}}</p>
@@ -10,11 +16,13 @@
 </template>
 <script>
 import NavBar from '../navbar/NavBar'
+import HeaderHead from '../components/Life/Header'
 import axios from 'axios'
 export default {
     name: 'Life',
     components: {
-        NavBar
+        NavBar,
+        HeaderHead
     },
     data(){
         return{
@@ -22,6 +30,7 @@ export default {
                 {id:'01',number:'8888 **** **** 8888'},
                 {id:'02',number:'9999 **** **** 9999'}
             ],
+            headtitle:'特惠快讯特惠快讯',
             title:'',
             nextbyn:'',
             confirm:'',
@@ -63,17 +72,18 @@ export default {
                     done();//这里执行回调函数
                     setTimeout(() => {
                     instance.confirmButtonLoading = false;
-                    }, 100000000);
-                }, 10000000);
+                    }, 3000);
+                }, 3000);
                 } else {
                 done();
                 }
             }
             }).then(action => {
-            this.$message({
-                type: 'info',
-                message: 'action: ' + action
-            });
+                alert('暂无信息')
+            // this.$message({
+            //     type: 'info',
+            //     message: 'action: ' + action
+            // });
             });
             
         }
@@ -122,12 +132,10 @@ export default {
     padding: 9px 0px 9px 40px !important;
     
 }
-.el-button:focus{
-    background-color:#fff !important;
-    color: black !important;
-}
+
 .el-button:hover{
     background-color:#fff !important;
     color: black !important;
 }
+
 </style>

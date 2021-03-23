@@ -12,11 +12,11 @@
           <i class="el-icon-present"></i>
           <p>生活</p>
           </div>
-          <div class="item" @click="clickItem('/myhome')" :class="{active: $route.path==='/myhome'}">
+          <div class="item" @click="clickItem('/sport')" :class="{active: $route.path==='/sport'}">
           <i class="el-icon-bicycle"></i>
           <p>运动</p>
           </div>
-          <div class="item" @click="clickItem('/myhome')" :class="{active: $route.path==='/myhome'}">
+          <div class="item" @click="clickItem('/card')" :class="{active: $route.path==='/card'}">
           <i class="el-icon-bank-card"></i>
           <p>用卡</p>
           </div>
