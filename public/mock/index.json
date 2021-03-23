@@ -50,7 +50,12 @@
         "id": "0010",
         "imgUrl": "./image/icon1.png",
         "desc": "进度查询"
-      }]
+      }],
+      "msgBox":{
+        "title":"同意授权缤纷生活将本人银行卡信息传递给京东",
+        "cancel":"取消",
+        "confirm":"确定"
+      }
     
   }
 }

@@ -42,7 +42,6 @@ export default {
 
 .cardRow {
   display: flex;
- 
   justify-content: space-between;
   padding: 1.5%;
   position: inherit;
