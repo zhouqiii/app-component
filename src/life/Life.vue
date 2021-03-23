@@ -28,7 +28,17 @@ export default {
         return{
             cardList:[
                 {id:'01',number:'8888 **** **** 8888'},
-                {id:'02',number:'9999 **** **** 9999'}
+                {id:'02',number:'9999 **** **** 9999'},
+                {id:'03',number:'8888 **** **** 8888'},
+                {id:'04',number:'9999 **** **** 9999'},
+                {id:'05',number:'8888 **** **** 8888'},
+                {id:'06',number:'9999 **** **** 9999'},
+                {id:'07',number:'8888 **** **** 8888'},
+                {id:'08',number:'9999 **** **** 9999'},
+                 {id:'09',number:'8888 **** **** 8888'},
+                {id:'10',number:'9999 **** **** 9999'},
+                {id:'11',number:'8888 **** **** 8888'},
+                {id:'12',number:'9999 **** **** 9999'},
             ],
             headtitle:'特惠快讯特惠快讯',
             title:'',
@@ -111,6 +121,9 @@ export default {
     padding-bottom: 0px!important;
 }
 .el-message-box__btns{
+    display: flex;
+    flex-direction: row;
+        justify-content: center ; 
     padding: 0px !important;
     text-align: center !important;
     border-top: 1px solid #d1c1c1;
@@ -120,7 +133,7 @@ export default {
     outline: none !important; 
       border-right: 1px solid #d1c1c1 !important;
        font-size: 14px !important;
-       padding: 9px 40px 9px 0px !important;
+       width: 50%;
    
 }
 .el-button--primary{
@@ -129,7 +142,8 @@ export default {
     outline: none !important; 
     color: #f73232ad !important;
     font-size: 14px !important;
-    padding: 9px 0px 9px 40px !important;
+    width: 50%;
+    margin-left:0px !important;
     
 }
 

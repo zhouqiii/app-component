@@ -4,9 +4,9 @@
             <i class="el-icon-arrow-left"></i>
         </div>
         <div class="headerinput">
-                <p class="headtitle">
-                    <slot name="headtitle"></slot>
-                </p>
+            <p class="headtitle">
+                <slot name="headtitle"></slot>
+            </p>
         </div>
         <div class="headerright">
              <i class="el-icon-share"></i>
@@ -30,9 +30,12 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .homeheader
+    position:fixed
+    top: 0px
+    width: 96%
     display: flex
-    color: black
     padding: 0 3%
+    color: black
     background-color: #eeeeee
     .headerleft
         float: left
